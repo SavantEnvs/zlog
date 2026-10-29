@@ -1,0 +1,5 @@
+[global]
+default format = "A %m%n"
+
+[rules]
+my_cat.*    "init_from_string_a.txt"

@@ -1,0 +1,9 @@
+project: savantenvs/zlog
+target: zlog_init_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/zlog_init_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/zlog_init_fuzzer
+    libfuzzer: true
+    timeout: 5
